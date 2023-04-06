@@ -3,13 +3,7 @@
 	"name": "YT-Sort-Oldest",
 	"version": "1.0",
 	"description": "A Chrome extension to sort a YouTube channels videos by oldest.",
-	"icons": {
-		"16": "images/icon-16.png",
-		"32": "images/icon-32.png",
-		"48": "images/icon-48.png",
-		"64": "images/icon-64.png",
-		"128": "images/icon-128.png"
-	},
+
 	"web_accessible_resources": [
 		{
 			"resources": [""],
@@ -18,14 +12,9 @@
 	],
 	"content_scripts": [
 		{
-			"run_at": "document_idle",
-			"js": [
-				"src/main.js"
-			],
-			"matches": [
-				"youtube.com"
-				"www.youtube.com"
-			]
+			"matches": ["*://*.youtube.com/*"],
+			"run_at": "document_end",
+			"js": ["src/main.js"]
 		}
 	]
 }
