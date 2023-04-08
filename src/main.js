@@ -14,9 +14,13 @@ async function main() {
     }
         selector.insertAdjacentHTML(
             'beforeend',
-            `<yt-chip-cloud-chip-renderer class="style-scope ytd-feed-filter-chip-bar-renderer" modern-chips="" aria-selected="false" role="tab" tabindex="0" chip-style="STYLE_DEFAULT">
+            `<yt-chip-cloud-chip-renderer 
+                class="style-scope ytd-feed-filter-chip-bar-renderer" modern-chips="" 
+                aria-selected="false" role="tab" tabindex="0" chip-style="STYLE_DEFAULT">
                 <!--css-build:shady--> 
-                <yt-formatted-string id="text" ellipsis-truncate="" class="style-scope yt-chip-cloud-chip-renderer" ellipsis-truncate-styling="" title="Oldest"> 
+                <yt-formatted-string id="text" ellipsis-truncate="" 
+                    class="style-scope yt-chip-cloud-chip-renderer" 
+                    ellipsis-truncate-styling="" title="Oldest"> 
                     Oldest
                 </yt-formatted-string>
             </yt-chip-cloud-chip-renderer>`);
